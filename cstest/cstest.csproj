@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AssemblyName>CommandName</AssemblyName>
+        <RootNamespace>CommandName</RootNamespace>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Contentstack.AspNetCore\Contentstack.AspNetCore.csproj" />
+      <ProjectReference Include="..\Contentstack.Core\Contentstack.Core.csproj" />
+      <ProjectReference Include="..\Deliverystack.Core.Stackcontent\Deliverystack.Core.Stackcontent.csproj" />
+      <ProjectReference Include="..\Deliverystack.Core\Deliverystack.Core.csproj" />
+      <ProjectReference Include="..\Root.Core.Models\Root.Core.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0-preview.4.20251.6" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0-preview.4.20251.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="bin\Debug\netcoreapp3.1\appsettings.json" />
+    </ItemGroup>
+
+</Project>
